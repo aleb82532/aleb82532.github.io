@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para camila</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Pinyon+Script&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===================== PANTALLA DE INICIO ===================== -->
+  <div id="intro-screen">
+    <p class="intro-hint">toca para abrir</p>
+    <div class="tap-pulse"></div>
+  </div>
+
+  <!-- ===================== ANIMACIÓN DEL CORAZÓN ===================== -->
+  <div id="heart-stage">
+    <div class="heart-wrapper">
+      <!-- Cuatro cuartos del corazón de papel doblado -->
+      <div class="flap flap-tl"></div>
+      <div class="flap flap-tr"></div>
+      <div class="flap flap-bl"></div>
+      <div class="flap flap-br"></div>
+      <!-- Interior del corazón que se revela al abrirse -->
+      <div class="heart-inner">
+        <svg class="heart-svg" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 160 C60 130 10 100 10 55 C10 25 35 5 65 5 C80 5 93 12 100 22 C107 12 120 5 135 5 C165 5 190 25 190 55 C190 100 140 130 100 160Z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== CARTA / CONTENIDO ===================== -->
+  <div id="letter-page">
+
+    <header class="letter-header">
+      <div class="rose-decoration">❧</div>
+      <!-- TÍTULO: reemplaza "Para ti" con el nombre de tu amada si quieres -->
+      <h1 class="letter-title">para cami</h1>
+      <div class="rose-decoration flip">❧</div>
+    </header>
+
+    <main class="letter-body">
+
+      <!--
+        ══════════════════════════════════════════════════════════════
+        ✏️  AQUÍ ESCRIBES TUS PÁRRAFOS
+        ──────────────────────────────────────────────────────────────
+        Cada bloque <p class="letter-paragraph"> es un párrafo que
+        aparece con un suave deslizamiento al hacer scroll.
+
+        • Puedes agregar más párrafos copiando y pegando el bloque.
+        • Puedes eliminar los que no necesites.
+        • El texto entre > y </p> es lo que verá tu amada.
+        ══════════════════════════════════════════════════════════════
+      -->
+
+      <!-- PÁRRAFO 1 ── saludo, apertura, o cómo empieza la carta -->
+      <p class="letter-paragraph">
+        Hola cami,te escribi unas palabras sobre lo que me gusta de vos y lo que me da gusto de hablar con vos.
+      </p>
+
+      <!-- PÁRRAFO 2 ── un recuerdo o momento especial -->
+      <p class="letter-paragraph">
+       Lo primero que tengo para remarcar ese humor agrio que tenes,como puedo decir "muerte a los judios" y vos me vas a rematar con un "hai hitler"
+       me encanta cuando miramos martin cirio o videos y hacemos esos chistes sin gracia y totalmente agrios pero mas alla de ser agrios se siente algo calido
+       en esos chistes "poco aceptables" esa parte de vos me llena cada que hablamos.
+      </p>
+
+      <!-- PÁRRAFO 3 ── lo que sientes por ella -->
+      <p class="letter-paragraph">
+       Que siento por vos de forma mas sincera,CALIDEZ algo en el hablar con vos y reirnos y mirar videos y quemar panckes me llena
+       osea que busco decir con esto que me encanta hablar con vos,nose si esto es el amor pero sos la primera que me genera este tipo de calidez al hablar 
+       y bromear de forma diaria,espero seguir escuchando esos chistes agrios con un "ndeaaa" por mucho tiempo.
+      </p>
+
+      <!-- PÁRRAFO 4 ── cierre, promesa o despedida -->
+      <p class="letter-paragraph">
+        Nose si de tu lado sea el mismo caso pero espero tener una historia larga con vos llena de memorias lindas,graciosas y muchos "hai hitler" y que seas mi cita de todas las noches
+        asi duermo mejor sabiendo que te tengo para escuchar a un martin cirio todos los dias bueno con mucho amor alexis.
+      </p>
+
+      <!--
+        ══════════════════════════════════════════════════════════════
+        ✏️  FIN DE LOS PÁRRAFOS  (agrega más arriba si los necesitas)
+        ══════════════════════════════════════════════════════════════
+      -->
+
+    </main>
+
+    <footer class="letter-footer">
+      <!-- FIRMA: cambia "Tu nombre" por tu nombre o apodo -->
+      <span class="letter-signature">Con amor,<br/><em>alexis,tu negrito</em></span>
+      <div class="heart-small">♥</div>
+    </footer>
+
+  </div>
+
+  <!-- Canvas para partículas flotantes de fondo -->
+  <canvas id="particles-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
